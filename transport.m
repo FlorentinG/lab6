@@ -21,7 +21,9 @@ for i = 1:3
         m = length(t);
         u = meth(t,sig,N,m);
         subplot(3,3,3*(i-1)+j);
-        plot(x,u(end,:));title(sprintf('sigma = %f',sig));
+        str = func2str(meth);
+        plot(x,u(end,:));title(sprintf('%s - sigma = %f',str,sig));
+        
     end
 end
 end
