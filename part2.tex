@@ -12,7 +12,7 @@ Using forward time and backward space differences and denoting $T_{i,k} \approx 
 &T_{i,k+1} = (1-\frac{vh_t}{hx}-ah_t)T_{i,k}+\frac{vh_t}{h_x}T_{i-1,k}+ah_tT_{cool}
 \end{align*}
 
-Because we have an initial condition and a boundary condition for $x=0$, we problem is well posed. The implementation is done in the code $temp.m$. Figure \ref{up} presents the results for the implementation of the upwind method for the given problem.
+Because we have an initial condition and a boundary condition for $x=0$, we problem is well posed. The implementation is done in the code $temp.m$. Figure \ref{up} presents the results for the implementation of the upwind method for the given problem where we use the relation $\frac{vh_t}{h_x}=1$.
 
 \begin{figure}
 \begin{center}
@@ -58,7 +58,7 @@ c_4 &= (ah_t - \frac{a^2h_t^2}{2})T_{cool}
 In this final part, we are going to use the Lax-Wendroff formula derived in the previous part. We have first to notice that because we need both the point to the right and the point to the left, we will have to use the extrapolation formula already used in the first part for the right end point (that is for $x=L$). That is : 
 $$T_{end,k} = 2T_{end-1,k}-T_{end-2,k}$$
 
-Using this and the boundary condition given, we can implement the problem. This is also done in $temp.m$. Figure \ref{lw} presents the results. 
+Using this and the boundary condition given, we can implement the problem. This is also done in $temp.m$ where we also used $\frac{vh_t}{h_x}=1$. Figure \ref{lw} presents the results. 
 
 \begin{figure}
 \begin{center}
