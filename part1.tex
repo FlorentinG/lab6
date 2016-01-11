@@ -25,7 +25,7 @@ $$u_{i,k+1} = \dfrac{u_{i-1,k}+u_{i+1,k}}{2}-\dfrac{\sigma}{2}(u_{i+1,k}-u_{i-1,
 \paragraph*{3) Lax-Wendroff method} is defined by 
 $$u_{i,k+1} = u_{i,k} -\dfrac{\sigma}{2}(u_{i+1,k}-u_{i-1,k}) +\dfrac{\sigma^2}{2}(u_{i+1,k}-2u_{i,k}+u_{i-1,k}).$$
 
-For the last two schemes, the value $u_{end,k+1}$ is not well defined. We use linear extrapolation $u_{end,k+1} = 2u_{end-1,k}+u_{end-2,k}$.
+For the last two schemes, the value $u_{end,k+1}$ is not well defined. We use linear extrapolation $$u_{end,k+1} = 2u_{end-1,k}-u_{end-2,k}$$.
 
 We look at the results on the test problem for the values $\sigma = \{0.8, 1, 1.1\}$. It is clear on figure~\ref{fig:1} that $\sigma=1.1$ gives an unstable scheme for each method. And the "magic" $\sigma=1$ transports the solution as it should. The interesting points to analyse are in the case $\sigma=0.8$ where different behaviour occur. The upwind and Lax-Friedrich methods introduce a smoothing. This is an illustration of an artificial dissipation. Finally, the Lax-Wendroff generates oscillations, this is to be expected for a method that is second order in time and the errors come from the dispersion in the numerical method.
 
