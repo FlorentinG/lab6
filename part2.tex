@@ -4,7 +4,6 @@ We are now concerned with the example 8.1 and we will try different methods to s
 We are first going to use the upwind method to solve the problem. The first step is to discretize the equation. The PDE is :
 
 $$\frac{\dr T}{\dr t}+v\frac{\dr T}{\dr x}+ a(T-T_{cool})=0$$
-
 Using forward time and backward space differences and denoting $T_{i,k} \approx T(ih_x,kh_t)$, we get :
 
 \begin{align*}
@@ -29,7 +28,7 @@ In this part, we are going to try to compute a Lax-Wendroff rule for the problem
 
 $$\frac{\dr T}{\dr t}=-v\frac{\dr T}{\dr x}-a(T-T_{cool})$$
 
-So the second order derivative, we have :
+For the second order derivative, we have :
 \begin{align*}
 \frac{\dr^2T}{\dr t^2} &= \frac{\dr}{\dr t}( -v\frac{\dr T}{\dr x}-a(T-T_{cool}))\\
 &=-v\frac{\dr}{\dr x}(\frac{\dr T}{\dr t})-a\frac{\dr T}{\dr t}\\
