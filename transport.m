@@ -23,7 +23,7 @@ for i = 1:3
         subplot(3,3,3*(i-1)+j);
         str = func2str(meth);
         plot(x,u(end,:));title(sprintf('%s - sigma = %f',str,sig));
-        
+    
     end
 end
 end

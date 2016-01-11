@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.17)  28 DEC 2015 17:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.17)  11 JAN 2016 20:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1309,30 +1309,29 @@ Package epstopdf Info: Source file: <./fig1.eps>
 (epstopdf)                    size: 13037 bytes
 (epstopdf)             Command: <repstopdf --outfile=./fig1-eps-converted-to.pd
 f ./fig1.eps>
-(epstopdf)             \includegraphics on input line 33.
+(epstopdf)             \includegraphics on input line 34.
 Package epstopdf Info: Output file is already uptodate.
 
 <./fig1-eps-converted-to.pdf, id=8, 982.67125pt x 518.93875pt>
 File: ./fig1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./fig1-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig1-eps-converted-to.pdf used on input line 33.
+Package pdftex.def Info: ./fig1-eps-converted-to.pdf used on input line 34.
 (pdftex.def)             Requested size: 491.33443pt x 259.46873pt.
 
-Overfull \hbox (38.36653pt too wide) in paragraph at lines 33--34
+Overfull \hbox (38.36653pt too wide) in paragraph at lines 34--35
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./part2.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
- [1
+[1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2pdfTeX warning (ext4): d
-estination with the same identifier (name{figure.0.1}) has been already used, d
-uplicate ignored
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./part2.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
+ [2pdfTeX warning (ext4): destination with the same identifier (name{figure.0.1
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1353,7 +1352,7 @@ Here is how much of TeX's memory you used:
  22749 multiletter control sequences out of 15000+600000
  36084 words of font info for 44 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,7n,72p,817b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,7n,72p,682b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
@@ -1365,7 +1364,7 @@ b></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy8.pfb>
-Output written on main.pdf (2 pages, 176354 bytes).
+Output written on main.pdf (2 pages, 176425 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream

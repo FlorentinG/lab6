@@ -19,6 +19,9 @@ for i = 1:length(methods)
     T(:,:,i) = meth(T(:,:,i),hx,ht,a,v,Tcool,Thot);
     figure;
     surf(x,t,T(:,:,i));
+    str = func2str(meth);
+    title(sprintf('%s - hx = %f',str,hx));
+
 end
 
 end
