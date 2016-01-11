@@ -21,6 +21,9 @@ for i = 1:length(methods)
     surf(x,t,T(:,:,i));
     str = func2str(meth);
     title(sprintf('%s - hx = %f',str,hx));
+    xlabel('x-axis [m]');
+    ylabel('time t [s]');
+    zlabel('temperature T [C]');
 
 end
 
